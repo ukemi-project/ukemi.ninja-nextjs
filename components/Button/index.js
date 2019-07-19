@@ -16,7 +16,7 @@ const Button = ({
 	...props
 }) => {
 	// Add all classs to an array
-	const addAllClasses = ['reusecore__button'];
+	const addAllClasses = [];
 
 	// IsLoading prop checking
 	if (isLoading) {

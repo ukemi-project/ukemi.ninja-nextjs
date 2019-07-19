@@ -1,13 +1,9 @@
 import styled from 'styled-components';
-import BannerBG from '../../static/img/banner-bg.jpg';
 
 const BannerWrapper = styled.section`
 	padding-top: 210px;
 	padding-bottom: 160px;
-	background-image: url(${BannerBG});
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-color: white;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -20,16 +16,6 @@ const BannerWrapper = styled.section`
 		padding-top: 150px;
 		padding-bottom: 60px;
 	}
-	.particle {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		@media (max-width: 767px) {
-			display: none;
-		}
-	}
 	.banner-container {
 		position: relative;
 	}
@@ -37,7 +23,7 @@ const BannerWrapper = styled.section`
 
 export const BubbleWrapper = styled.div`text-align: center;`;
 
-export const Bubble = styled.div`
+export const Bubble = styled.button`
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	display: inline-block;

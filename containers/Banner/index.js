@@ -5,19 +5,24 @@ import Box from './../../components/Box';
 import Heading from './../../components/Heading';
 import Text from './../../components/Text';
 import Container from './../../components/Container';
+import ParticlesComponent from './../../components/Particle';
 import BannerWrapper, { Bubble, BubbleWrapper } from './banner.style';
 
 const BannerSection = ({ row, title, description, textArea, bubbleHead, bubbleText }) => {
 	return (
 		<BannerWrapper id="banner-section">
+			<ParticlesComponent />
 			<Container className="banner-container">
 				<Box {...row}>
 					<Box {...textArea}>
 						<BubbleWrapper>
-							<Link to="https://ukemi.ninja/shop/ukemi-card-game-parkour-freerunning-project">
-								<Bubble>
-									<Text {...bubbleHead} content="In Stock" />
-									<Text {...bubbleText} content="Discover the Ukemi card game!" />
+							<Link to="">
+								<Bubble
+									as="a"
+									href="https://ukemi.ninja/shop/ukemi-card-game-parkour-freerunning-project"
+								>
+									<Text {...bubbleHead} content="In Stock!" />
+									<Text {...bubbleText} content="Click to discover the Ukemi card game" />
 								</Bubble>
 							</Link>
 						</BubbleWrapper>
@@ -72,7 +77,7 @@ BannerSection.defaultProps = {
 	bubbleHead: {
 		fontSize: ['13px', '14px', '14px', '14px', '14px'],
 		fontWeight: '600',
-		color: '#F56A5B',
+		color: 'green',
 		mb: 0,
 		as: 'span',
 		mr: '0.4em',

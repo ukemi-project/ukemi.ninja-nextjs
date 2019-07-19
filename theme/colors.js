@@ -15,6 +15,11 @@ const colors = {
 	yellow: '#fdb32a', // 12
 	yellowHover: '#F29E02', // 13
 	primaryBoxShadow: '0px 8px 20px -6px rgba(235,77,75,0.6)',
+	green: '#33E46D',
+	orange: '#FF9439',
+	blue: '#33A7E4',
+	cherry: '#F43779',
+	red: '#FF5039',
 };
 
 export default colors;
